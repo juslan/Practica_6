@@ -1,6 +1,7 @@
 # • Seguridad Informatica  == seguInf
 # • Ingenierıa de Software == ingSoft
 # • Inteligencia Artificial == intArt
+from queue import PriorityQueue
 
 class Expositor:
     def __init__(self,name,area):
@@ -46,8 +47,11 @@ def fordward_checking(Xi,v):
         if(borrar!=None):
             Xe.remove(borrar)
     
-# def mrv(X):
-#     ordered_variables = pqueue();
+def mrv(X):
+    ordered_variables = PriorityQueue()
+    for Xi in X:
+        ordered_variables.push(Xi,len(Xi.dominio))
+    return ordered_variables
 
 # def backtrack(assignment, csp):
 #     if (assignment is complete):
