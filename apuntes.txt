@@ -1,0 +1,25 @@
+Cada variable tiene su propio dominio
+//0
+
+Backtrack(x,w,Dominios,variables):
+    if(x es una asignacion completa) //es decir que todas las variables tienen un asignacion y es consistente, Restricciones satisfechas
+                                        El peso es igual a 1.
+        return x;
+    asignar = random(variables)
+
+
+
+//1 Actualizar Dominios
+
+
+
+//2 Escoger una variable sin asignacion Xi
+
+
+//3 Ordenar los valores en DOMINIOi de la variable Xi
+
+
+
+
+*   Nosotros empezamos con una asignacion vacia
+*   Seleccionamos un nodo al azar y Seleccionamos uno de sus valores de dominio al azar
