@@ -52,6 +52,17 @@ def mrv(X):
     for Xi in X:
         ordered_variables.push(Xi,len(Xi.dominio))
     return ordered_variables
+def leastConstrainedValue(Xi,X):
+    allConsistentValues= PriorityQueue()
+    for v in Xi.dominio:
+        temp_x= X.copy
+        fordward_checking(Xi,v)
+        consistentValues=0
+        for Xe in neighbors(Xi):
+            consistentValues = consistentValues + len(Xe.Dominio)
+        allConsistentValues.push(v,consistentValues)
+        x=temp_x
+    return list(allConsistentValues)
 
 # def backtrack(assignment, csp):
 #     if (assignment is complete):
