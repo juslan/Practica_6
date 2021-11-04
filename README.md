@@ -15,11 +15,16 @@ To apply PSSR, Variables, domains and assignments are required.
 - Moving on to the domains, in this case all the speakers will give the talks in order to assign them to a respective schedule.
 - The assignments were placed while the algorithm is running, we just have to place one speaker in the start of the algorithm to continue with the others
 
-It was convenient to apply PSSR in this way since the schedules have their neighbors defined, as an example we can see the neighbors of a schedule here. (9:00 or 17:00)
+It was convenient to apply PSSR in this way since the schedules have their neighbors defined, as an example we can see the neighbors of a schedule at the file "Vecinos de un horario de arriba" that is inside the images folder for any hour of (9:00 or 17:00)
 
-Here we can see the neighbors of a schedule that is between 10:00 until 16:00
+
+Here (at the file "Horarios de un dia.png" that is inside the images folder) we can see the neighbors of a schedule that is between 10:00 until 16:00
+
+All the variables are 90, here we can see the complet variables.
+(at the file "Horarios de toda la semana.png" that is inside the images folder)
+
 
 ## 3. Experiments & Results
 
-I could not run the algorithms that I programmed, but the algorithms and logic of the problem are in the Backtrack.py archive
+I could not run the algorithms togheter to solve the problem, but the algorithms and logic of the problem are in the Backtrack.py file
 
