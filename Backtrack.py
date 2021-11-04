@@ -64,11 +64,13 @@ def leastConstrainedValue(Xi,X):
         x=temp_x
     return list(allConsistentValues)
 
-# def backtrack(assignment, csp):
-#     if (assignment is complete):
-#         return assignment
-#     var = select_unassigned_variable(csp)
-#     for value in order_domain_values(var, )
+def backtrack(x,W,Dominios,X):
+    if (x is complete):
+        return x
+    Xi=mrv(X)
+    leastConstrainedValue(Xi,X)
+    for v in Xi.dominio:
+        backtrack(x,W,Dominios,X)
 
 def main():
     #exhibitor
